@@ -3,63 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Vihanga De Silva | Textile & Apparel Engineer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Web Developer | Designer | Creator</p>
+        <div class="header-content">
+            <h1>Your Name</h1>
+            <h2>Textile & Apparel Engineer</h2>
+            <p>Specializing in Pattern Technology, 3D Prototyping & Quality Assurance</p>
+        </div>
     </header>
 
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate developer who loves creating web applications. Here's a brief introduction about yourself.</p>
+    <section id="about" class="section-dark">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Textile and Apparel Engineering graduate from University of Moratuwa with expertise in pattern technology, 3D prototyping, and quality assurance. Passionate about innovative fabric technologies and efficient garment production processes.</p>
+                    <p>With experience at MAS Holdings and technical proficiency in Gerber AccuMark, VStitcher, and Tukatech, I bridge the gap between design and production to create functional, high-quality apparel.</p>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <h4>B.Sc. Eng. Hons. in Textile and Apparel Engineering</h4>
+                        <p>University of Moratuwa | 2019-2024</p>
+                        <p>GPA: 3.46 (Second Class Upper Division)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of your first project.</p>
-                <a href="#" class="project-link">View Project</a>
+    <section id="experience">
+        <div class="section-content">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Jul 2023 – Present</div>
+                    <div class="timeline-content">
+                        <h3>Product Development Engineer - Intimate Apparel</h3>
+                        <h4>MAS Intimates (Pvt.) Ltd., Sri Lanka</h4>
+                        <ul>
+                            <li>Developed technical specifications and construction methods for intimate wear</li>
+                            <li>Collaborated with cross-functional teams to optimize production processes</li>
+                            <li>Conducted fit evaluations and quality assessments</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2023 – Jun 2023</div>
+                    <div class="timeline-content">
+                        <h3>Pattern Technologist - Intern</h3>
+                        <h4>MAS Intimates (Pvt.) Ltd., Sri Lanka</h4>
+                        <ul>
+                            <li>Created manual and digital patterns using Gerber AccuMark</li>
+                            <li>Conducted fit evaluations and sample testing</li>
+                            <li>Managed technical documentation and PLM data</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Description of your second project.</p>
-                <a href="#" class="project-link">View Project</a>
+        </div>
+    </section>
+
+    <section id="projects" class="section-dark">
+        <div class="section-content">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/hydrophobic-fabric.jpg" alt="Hydrophobic Finishes Research">
+                    </div>
+                    <div class="project-content">
+                        <h3>Hydrophobic Finishes & Plasma Technology</h3>
+                        <p class="project-subtitle">Final Year Research Project</p>
+                        <ul>
+                            <li>Investigated impact on adhesive bonding of knitted fabrics</li>
+                            <li>Analyzed parameters affecting fabric bondability</li>
+                            <li>Explored plasma technology to enhance seam strength</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>Textile Testing</span>
+                            <span>Plasma Treatment</span>
+                            <span>Bond Strength Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/wired-bra.jpg" alt="Wired Bra Development">
+                    </div>
+                    <div class="project-content">
+                        <h3>Intimate Wear Development – Wired Bra</h3>
+                        <p class="project-subtitle">Jan 2024 – May 2024</p>
+                        <ul>
+                            <li>Technical drawings and fabric selection</li>
+                            <li>Construction methods and fit evaluations</li>
+                            <li>Pattern adjustments for production-ready quality</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>Gerber AccuMark</span>
+                            <span>Pattern Grading</span>
+                            <span>Fit Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/3d-trouser.jpg" alt="3D Trouser Development">
+                    </div>
+                    <div class="project-content">
+                        <h3>3D Men's Wear Trouser Development</h3>
+                        <p class="project-subtitle">Jul 2023 – Nov 2023</p>
+                        <ul>
+                            <li>Digital prototyping with VStitcher</li>
+                            <li>DXF pattern imports and avatar selection</li>
+                            <li>Material application and drape simulation</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>VStitcher</span>
+                            <span>3D Visualization</span>
+                            <span>Digital Patternmaking</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>Git</li>
-            <li>Responsive Design</li>
-        </ul>
+        <div class="section-content">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3>Technical Expertise</h3>
+                    <ul class="skills-list">
+                        <li>Pattern Making & Grading</li>
+                        <li>3D Garment Prototyping</li>
+                        <li>Fit Evaluation & Correction</li>
+                        <li>Quality Assurance</li>
+                        <li>Product Lifecycle Management</li>
+                        <li>Fabric Testing & Analysis</li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <h3>Software Proficiency</h3>
+                    <ul class="skills-list">
+                        <li>Gerber AccuMark</li>
+                        <li>Tukatech</li>
+                        <li>VStitcher</li>
+                        <li>Adobe Illustrator</li>
+                        <li>PLM Systems</li>
+                        <li>Microsoft Office Suite</li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <h3>Soft Skills</h3>
+                    <ul class="skills-list">
+                        <li>Technical Communication</li>
+                        <li>Cross-Functional Collaboration</li>
+                        <li>Problem Solving</li>
+                        <li>Quality Management</li>
+                        <li>Process Optimization</li>
+                        <li>Project Coordination</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="contact" class="section-dark">
+        <div class="section-content">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +94 77 123 4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-researchgate"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer>
