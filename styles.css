@@ -464,11 +464,12 @@ h2::after {
     font-size: 0.95rem;
 }
 
-/* Contact Section */
+/* Contact Section - Updated */
 #contact {
     background: var(--dark-color);
     color: white;
     padding: 4rem 0;
+    text-align: center; /* Center align all text */
 }
 
 .contact-container {
@@ -477,12 +478,20 @@ h2::after {
     gap: 3rem;
     max-width: 1000px;
     margin: 0 auto;
+    align-items: center; /* Vertically center items */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contact info items */
 }
 
 .contact-info h3 {
     color: white;
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
+    width: 100%; /* Ensure full width for proper centering */
 }
 
 .contact-info p {
@@ -490,6 +499,8 @@ h2::after {
     display: flex;
     align-items: center;
     gap: 1rem;
+    justify-content: center; /* Center the contact items */
+    width: 100%; /* Full width for proper alignment */
 }
 
 .contact-info i {
@@ -501,8 +512,28 @@ h2::after {
 
 .social-links {
     display: flex;
+    justify-content: center; /* Center social links */
     gap: 1rem;
     margin-top: 2rem;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* LinkedIn styled as telephone number */
+.social-links a[href*="linkedin"] {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.social-links a[href*="linkedin"]::before {
+    content: "\f0e1"; /* LinkedIn icon */
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
 }
 
 .social-links a {
@@ -514,6 +545,8 @@ h2::after {
 .social-links a:hover {
     color: var(--secondary-color);
 }
+
+
 
 /* #contact-form {
     display: grid;
