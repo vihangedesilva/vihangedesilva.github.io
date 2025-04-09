@@ -345,7 +345,7 @@ h2::after {
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     position: relative;
-    color: black !important;
+    color: #333; /* Set default text color */
 }
 
 .timeline-content::after {
@@ -369,12 +369,12 @@ h2::after {
 }
 
 .timeline-content h3 {
-    color: var(--primary-color);
+    color: var(--primary-color); /* #2c3e50 */
     margin-bottom: 0.5rem;
 }
 
 .timeline-content h4 {
-    color: var(--dark-color);
+    color: var(--dark-color); /* #34495e */
     margin-bottom: 1rem;
     font-size: 1rem;
     font-weight: 500;
@@ -383,13 +383,13 @@ h2::after {
 .timeline-content ul {
     list-style-position: inside;
     margin-left: 0.5rem;
-    color: black; /* Ensure list items are black */
+    color: #333; /* Ensure list text is dark */
 }
 
 .timeline-content li {
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
-    color: black; /* Ensure list items are black */
+    color: #333; /* Ensure list items are dark */
 }
 
 /* Skills Section */
