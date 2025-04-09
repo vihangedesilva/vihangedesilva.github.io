@@ -260,6 +260,15 @@ h2::after {
     line-height: 1.8;
 }
 
+.about-text ul {
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text li {
+    margin-bottom: 0.5rem;
+}
+
 .education {
     background: white;
     padding: 2rem;
@@ -287,6 +296,16 @@ h2::after {
     color: #666;
     margin-bottom: 0.3rem;
     font-size: 0.95rem;
+}
+
+.education-item ul {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.education-item li {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
 }
 
 /* Experience Section */
@@ -433,6 +452,36 @@ h2::after {
     color: var(--secondary-color);
 }
 
+.leadership-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.leadership-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.leadership-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.leadership-item ul {
+    margin-left: 1rem;
+}
+
+.leadership-item li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
 /* Contact Section */
 #contact {
     background: var(--dark-color);
@@ -542,6 +591,10 @@ footer {
     }
     
     .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .leadership-grid {
         grid-template-columns: 1fr;
     }
     
