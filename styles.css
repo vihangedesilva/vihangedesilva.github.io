@@ -289,7 +289,7 @@ h2::after {
 /* Experience Section - UPDATED WIDER BOXES */
 .timeline {
     position: relative;
-    max-width: 1000px; /* Increased from 800px */
+    max-width: 2000px; /* Increased from 800px */
     margin: 0 auto;
 }
 
