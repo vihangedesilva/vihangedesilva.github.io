@@ -289,7 +289,7 @@ h2::after {
 /* Experience Section - UPDATED WIDER BOXES */
 .timeline {
     position: relative;
-    max-width: 2000px; /* Increased from 800px */
+    max-width: 3000px; /* Increased from 800px */
     margin: 0 auto;
 }
 
@@ -499,8 +499,8 @@ h2::after {
     display: flex;
     align-items: center;
     gap: 1rem;
-    justify-content: center;
-    width: 100%;
+    margin-left: auto;   /* ⬅️ new */
+    margin-right: auto;  /* ⬅️ new */
 }
 
 .contact-info i {
@@ -508,50 +508,6 @@ h2::after {
     text-align: center;
     font-size: 1.2rem;
     color: var(--secondary-color);
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.social-links a {
-    color: white;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: var(--secondary-color);
-}
-
-/* LinkedIn styled as contact item */
-.linkedin-contact {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    justify-content: center;
-}
-
-.linkedin-contact i {
-    color: var(--secondary-color);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .contact-info p {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .linkedin-contact {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
 }
 
 
