@@ -345,6 +345,7 @@ h2::after {
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     position: relative;
+    color: black !important;
 }
 
 .timeline-content::after {
@@ -382,11 +383,13 @@ h2::after {
 .timeline-content ul {
     list-style-position: inside;
     margin-left: 0.5rem;
+    color: black; /* Ensure list items are black */
 }
 
 .timeline-content li {
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
+    color: black; /* Ensure list items are black */
 }
 
 /* Skills Section */
