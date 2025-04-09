@@ -479,6 +479,8 @@ h2::after {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 2rem;
+    margin-left: auto;   /* ⬅️ new */
+    margin-right: auto;  /* ⬅️ new */
 }
 
 .contact-info {
