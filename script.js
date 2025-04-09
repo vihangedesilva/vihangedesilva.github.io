@@ -18,6 +18,40 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     this.reset();
 });
 
+// Project expansion functionality
+document.querySelectorAll('.show-more-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const projectId = this.getAttribute('data-project');
+        const projectExpanded = document.getElementById(projectId);
+        
+        // Close any open projects first
+        document.querySelectorAll('.project-expanded').forEach(expanded => {
+            if (expanded.id !== projectId) {
+                expanded.classList.remove('active');
+                expanded.previousElementSibling.querySelector('.show-more-btn').textContent = 'Show Full Project Details';
+            }
+        });
+        
+        // Toggle current project
+        projectExpanded.classList.toggle('active');
+        this.textContent = projectExpanded.classList.contains('active') ? 'Hide Details' : 'Show Full Project Details';
+        
+        // Scroll to project if opening
+        if (projectExpanded.classList.contains('active')) {
+            projectExpanded.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    });
+});
+
+// Show less buttons
+document.querySelectorAll('.show-less-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const projectExpanded = this.closest('.project-expanded');
+        projectExpanded.classList.remove('active');
+        document.querySelector(`[data-project="${projectExpanded.id}"]`).textContent = 'Show Full Project Details';
+    });
+});
+
 // Animate timeline items on scroll
 const timelineItems = document.querySelectorAll('.timeline-item');
 
