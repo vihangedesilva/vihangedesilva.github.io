@@ -27,29 +27,21 @@ document.addEventListener('DOMContentLoaded', function() {
             const projectId = this.getAttribute('data-project');
             const projectExpanded = document.getElementById(projectId);
             
-            // Close any open projects first
-            document.querySelectorAll('.project-expanded').forEach(expanded => {
-                if (expanded.id !== projectId && expanded.classList.contains('active')) {
-                    expanded.classList.remove('active');
-                    const correspondingBtn = expanded.parentElement.querySelector('.show-more-btn');
-                    if (correspondingBtn) {
-                        correspondingBtn.textContent = 'Show Full Project Details';
-                    }
-                }
-            });
-            
-            // Toggle current project
+            // Toggle the active class
             projectExpanded.classList.toggle('active');
-            this.textContent = projectExpanded.classList.contains('active') ? 'Hide Details' : 'Show Full Project Details';
             
-            // Scroll to project if opening
+            // Update button text
             if (projectExpanded.classList.contains('active')) {
+                this.textContent = 'Hide Details';
+                // Scroll to the expanded section
                 setTimeout(() => {
                     projectExpanded.scrollIntoView({ 
                         behavior: 'smooth', 
                         block: 'nearest'
                     });
                 }, 100);
+            } else {
+                this.textContent = 'Show Full Project Details';
             }
         });
     });
@@ -65,16 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (showMoreBtn) {
                 showMoreBtn.textContent = 'Show Full Project Details';
             }
-            
-            // Scroll back to the project card
-            setTimeout(() => {
-                if (showMoreBtn) {
-                    showMoreBtn.scrollIntoView({ 
-                        behavior: 'smooth', 
-                        block: 'nearest'
-                    });
-                }
-            }, 100);
         });
     });
 
