@@ -122,7 +122,7 @@ h2::after {
     background: var(--secondary-color);
 }
 
-/* Featured Projects Section */
+/* Featured Projects Section - Fixed */
 #featured-projects {
     background-color: #f8f9fa;
     padding: 4rem 0;
@@ -132,6 +132,7 @@ h2::after {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 2rem;
+    margin-top: 2rem;
 }
 
 .project-card {
@@ -140,6 +141,8 @@ h2::after {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -164,26 +167,32 @@ h2::after {
 
 .project-content {
     padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-content h3 {
-    color: var(--primary-color);
+    color: #2c3e50;
     margin-bottom: 0.5rem;
+    font-size: 1.4rem;
 }
 
 .project-subtitle {
-    color: var(--secondary-color);
+    color: #3498db;
     font-weight: 500;
     margin-bottom: 1rem;
-    display: block;
+    font-size: 0.9rem;
 }
 
 .project-summary {
     margin-bottom: 1.5rem;
+    flex-grow: 1;
 }
 
 .project-summary p {
     margin-bottom: 1rem;
+    font-size: 0.95rem;
 }
 
 .project-summary ul {
@@ -192,10 +201,11 @@ h2::after {
 
 .project-summary li {
     margin-bottom: 0.3rem;
+    font-size: 0.9rem;
 }
 
 .show-more-btn {
-    background: var(--secondary-color);
+    background: #3498db;
     color: white;
     border: none;
     padding: 0.7rem 1.5rem;
@@ -203,10 +213,8 @@ h2::after {
     cursor: pointer;
     font-size: 0.9rem;
     transition: background 0.3s;
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 .show-more-btn:hover {
@@ -230,7 +238,7 @@ h2::after {
 }
 
 .show-less-btn {
-    background: var(--secondary-color);
+    background: #3498db;
     color: white;
     border: none;
     padding: 0.7rem 1.5rem;
