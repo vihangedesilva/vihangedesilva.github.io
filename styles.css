@@ -515,7 +515,7 @@ h2::after {
     color: var(--secondary-color);
 }
 
-#contact-form {
+/* #contact-form {
     display: grid;
     gap: 1.2rem;
 }
@@ -556,7 +556,7 @@ h2::after {
 
 #contact-form button:hover {
     background: #2980b9;
-}
+} */
 
 /* Project Page Specific Styles */
 .project-header {
