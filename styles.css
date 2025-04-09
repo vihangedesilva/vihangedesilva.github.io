@@ -286,10 +286,10 @@ h2::after {
     font-size: 0.9rem;
 }
 
-/* Experience Section */
+/* Experience Section - UPDATED WIDER BOXES */
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 1000px; /* Increased from 800px */
     margin: 0 auto;
 }
 
@@ -307,7 +307,7 @@ h2::after {
 .timeline-item {
     padding: 10px 40px;
     position: relative;
-    width: 50%;
+    width: 48%; /* Adjusted from 50% */
     box-sizing: border-box;
     margin-bottom: 2rem;
 }
@@ -317,7 +317,7 @@ h2::after {
 }
 
 .timeline-item:nth-child(even) {
-    left: 50%;
+    left: 52%; /* Adjusted from 50% */
 }
 
 .timeline-date {
@@ -332,11 +332,11 @@ h2::after {
 }
 
 .timeline-item:nth-child(odd) .timeline-date {
-    right: -120px;
+    right: -100px; /* Adjusted from -120px */
 }
 
 .timeline-item:nth-child(even) .timeline-date {
-    left: -120px;
+    left: -100px; /* Adjusted from -120px */
 }
 
 .timeline-content {
@@ -345,7 +345,8 @@ h2::after {
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     position: relative;
-    color: #333; /* Set default text color */
+    color: #333;
+    width: 100%; /* Ensure full width */
 }
 
 .timeline-content::after {
@@ -369,12 +370,12 @@ h2::after {
 }
 
 .timeline-content h3 {
-    color: var(--primary-color); /* #2c3e50 */
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
 
 .timeline-content h4 {
-    color: var(--dark-color); /* #34495e */
+    color: var(--dark-color);
     margin-bottom: 1rem;
     font-size: 1rem;
     font-weight: 500;
@@ -383,13 +384,13 @@ h2::after {
 .timeline-content ul {
     list-style-position: inside;
     margin-left: 0.5rem;
-    color: #333; /* Ensure list text is dark */
+    color: #333;
 }
 
 .timeline-content li {
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
-    color: #333; /* Ensure list items are dark */
+    color: #333;
 }
 
 /* Skills Section */
