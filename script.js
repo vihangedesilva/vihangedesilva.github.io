@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
             document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+                behavior: 'smooth',
+                block: 'start'
             });
         });
     });
@@ -44,7 +45,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // Scroll to project if opening
             if (projectExpanded.classList.contains('active')) {
                 setTimeout(() => {
-                    projectExpanded.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    projectExpanded.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'nearest'
+                    });
                 }, 100);
             }
         });
@@ -65,7 +69,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // Scroll back to the project card
             setTimeout(() => {
                 if (showMoreBtn) {
-                    showMoreBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    showMoreBtn.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'nearest'
+                    });
                 }
             }, 100);
         });
