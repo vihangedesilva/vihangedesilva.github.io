@@ -94,14 +94,18 @@ section {
     padding: 4rem 0;
 }
 
-.section-dark {
+.section-light {
     background-color: #f8f9fa;
+}
+
+.section-dark {
+    background-color: var(--dark-color);
+    color: white;
 }
 
 h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: var(--primary-color);
     text-align: center;
     position: relative;
     padding-bottom: 1rem;
@@ -118,7 +122,7 @@ h2::after {
     background: var(--secondary-color);
 }
 
-/* Featured Projects Section Fixes */
+/* Featured Projects Section */
 #featured-projects {
     background-color: #f8f9fa;
     padding: 4rem 0;
@@ -136,7 +140,6 @@ h2::after {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s;
-    position: relative;
 }
 
 .project-card:hover {
@@ -161,16 +164,15 @@ h2::after {
 
 .project-content {
     padding: 1.5rem;
-    position: relative;
 }
 
 .project-content h3 {
-    color: #2c3e50;
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
 
 .project-subtitle {
-    color: #3498db;
+    color: var(--secondary-color);
     font-weight: 500;
     margin-bottom: 1rem;
     display: block;
@@ -193,7 +195,7 @@ h2::after {
 }
 
 .show-more-btn {
-    background: #3498db;
+    background: var(--secondary-color);
     color: white;
     border: none;
     padding: 0.7rem 1.5rem;
@@ -228,7 +230,7 @@ h2::after {
 }
 
 .show-less-btn {
-    background: #3498db;
+    background: var(--secondary-color);
     color: white;
     border: none;
     padding: 0.7rem 1.5rem;
@@ -242,124 +244,6 @@ h2::after {
 
 .show-less-btn:hover {
     background: #2980b9;
-}
-
-/* Expanded Project Content */
-.project-expanded {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-    background: #f5f7fa;
-    margin-top: 1rem;
-}
-
-.project-expanded.active {
-    max-height: 5000px;
-    transition: max-height 0.5s ease-in;
-}
-
-.expanded-content {
-    padding: 2rem;
-}
-
-.project-section {
-    margin-bottom: 2.5rem;
-}
-
-.project-section h4 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.5rem;
-}
-
-.project-section h5 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.5rem;
-}
-
-.drawing-grid, .garment-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
-}
-
-.drawing-grid div, .garment-images div {
-    text-align: center;
-}
-
-.drawing-grid img, .garment-images img {
-    max-width: 100%;
-    border: 1px solid #ddd;
-    padding: 0.5rem;
-    background: white;
-}
-
-.spec-table, .operation-table, .materials-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-}
-
-.spec-table th, .operation-table th, .materials-table th {
-    background: var(--primary-color);
-    color: white;
-    padding: 0.7rem;
-    text-align: left;
-}
-
-.spec-table td, .operation-table td, .materials-table td {
-    padding: 0.7rem;
-    border-bottom: 1px solid #ddd;
-}
-
-.spec-table tr:nth-child(even), 
-.operation-table tr:nth-child(even),
-.materials-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.solutions {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.solutions p {
-    margin-bottom: 0.8rem;
-}
-
-.solutions p strong {
-    color: var(--primary-color);
-}
-
-.issues-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-
-.issue-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.issue-card p {
-    margin-bottom: 0.5rem;
-}
-
-.show-less-btn {
-    display: block;
-    margin: 2rem auto 0;
 }
 
 /* About Section */
@@ -549,9 +433,9 @@ h2::after {
     color: var(--secondary-color);
 }
 
-/* Contact Section Fixes */
+/* Contact Section */
 #contact {
-    background: #2c3e50;
+    background: var(--dark-color);
     color: white;
     padding: 4rem 0;
 }
@@ -581,7 +465,7 @@ h2::after {
     width: 30px;
     text-align: center;
     font-size: 1.2rem;
-    color: #3498db;
+    color: var(--secondary-color);
 }
 
 .social-links {
@@ -597,13 +481,21 @@ h2::after {
 }
 
 .social-links a:hover {
-    color: #3498db;
+    color: var(--secondary-color);
+}
+
+#contact-form {
+    display: grid;
+    gap: 1.2rem;
 }
 
 #contact-form input,
 #contact-form textarea {
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
     background: rgba(255,255,255,0.9);
-    border: 1px solid #ddd;
     color: #333;
 }
 
